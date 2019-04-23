@@ -1,0 +1,22 @@
+package projOne;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ValueForKey {
+	static Map<Integer, String> m = new HashMap<Integer, String>();
+
+	public static void main(String[] args) {
+		m.put(1, "Name1");
+		m.put(2, "Name2");
+		m.put(3, "Name3");
+		m.put(4, "Name4");
+		m.put(5, "Name5");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the key value 1 to 5 : ");
+		int i = sc.nextInt();
+		System.out.println("Respective Value is : " + m.get(i));
+		
+	}
+}
