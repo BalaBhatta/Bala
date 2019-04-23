@@ -1,0 +1,19 @@
+package projOne;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class PositionAdditionLL {
+	static List<String> li = new LinkedList<String>();
+
+	public static void main(String[] args) {
+		li.add(0, "Name0");
+		li.add(1, "Name1");
+		li.add(2, "Name2");
+		li.add(3, "Name3");
+		li.add(4, "");
+		li.add(5, "Name5");
+		System.out.println(li);
+	}
+
+}
