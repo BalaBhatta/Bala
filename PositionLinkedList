@@ -1,0 +1,33 @@
+package projOne;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class PositionLinkedList {
+	List <String>lis=new LinkedList<String>();
+	public static void main(String[] args){
+		PositionLinkedList pa=new PositionLinkedList();
+		pa.addData("A");
+		pa.addData("B");
+		pa.addData("C");
+		pa.addData("D");
+		pa.addData("A");
+		pa.addData("A");
+		pa.addData("B");
+		pa.addData("D");
+		pa.addData("E");
+		
+		pa.position("B", "A");
+			
+	}
+	public void addData(String data){
+		lis.add(data);
+		}
+	public void position(String first, String last){
+		System.out.println("First occurrence of "+first+" is "+lis.indexOf(first));
+		System.out.println("Last occurrence of "+last+" is "+lis.lastIndexOf(last));
+		}
+
+	
+}
+
