@@ -1,0 +1,47 @@
+package projOne;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class JoinTwoLinList {
+	List <String>lis = new LinkedList<String>();
+	List <String>lis1 = new LinkedList<String>();
+	List <String>lis2 = new LinkedList<String>(); 
+	
+	public static void main (String[] args){
+		JoinTwoLinList pa=new JoinTwoLinList();
+		pa.addData("Name00");
+		pa.addData("Name01");
+		pa.addData("Name02");
+		pa.addData("Name03");
+		pa.addData("Name04");
+		pa.addData("Name05");
+		
+		pa.addData("1");
+		pa.addData("2");
+		pa.addData("3");
+		pa.addData("4");
+		pa.addData("5");
+		
+		pa.showData();
+		
+	}
+	public void addData(String data){
+		lis.add(data);
+		}
+	
+		
+	public void showData(){
+		
+		for(int i=0;i<lis.size();i++)
+			lis2.add(lis.get(i));
+		for(int i=0;i<lis1.size();i++)
+			lis2.add(lis1.get(i));	
+		
+		for (String s:lis2)
+			System.out.println(s);
+		
+		}	
+	
+	
+	}
