@@ -1,0 +1,19 @@
+package projOne;
+
+import java.util.Scanner;
+
+public class SingletonMainClass {
+	public static void main(String [] args){
+		int count,count1;
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the number of tickets needed:");
+		count=sc.nextInt();
+		Singleton x = Singleton.singleton(count);
+		System.out.println(x.calculate(count));
+		System.out.println("Enter the number of tickets needed:");
+		count1=sc.nextInt();
+		Singleton y = Singleton.singleton(count1);
+		System.out.println(y.calculate(count1));
+		}
+
+}
