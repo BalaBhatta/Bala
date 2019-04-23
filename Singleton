@@ -1,0 +1,20 @@
+package projOne;
+
+public class Singleton {
+	private static Singleton instance=null;
+	static int ticket_count=200;
+	private Singleton(int count){}
+	
+	public static Singleton singleton(int count){
+		if (instance == null) 
+        { 
+            instance = new Singleton(count); 
+        } 
+        return instance; 
+	}
+	
+	public int calculate(int count){
+		return ticket_count=ticket_count-count;
+		
+	} 
+}
