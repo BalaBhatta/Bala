@@ -1,0 +1,16 @@
+package projOne;
+
+public class EmpListToMapL {
+	int empid;
+	String fname;
+	String lname;
+	int ph;
+	EmpListToMapL(int empid, String fname, String lname, int ph){
+		this.empid=empid;
+		this.fname=fname;
+		this.lname=lname;
+		this.ph=ph;	
+	}
+	
+
+}
