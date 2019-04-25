@@ -1,0 +1,40 @@
+package projOne;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class EmpListToMap {
+		static List <EmpListToMapL>lis=new ArrayList<EmpListToMapL>();
+		public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int [] empid= new int [50] ;
+		String [] fname=new String [50] ;
+		String [] lname=new String [50];
+		int [] ph=new int [50];
+		System.out.println("Enter the number of employees: ");
+		int count = sc.nextInt();
+		for (int i=0;i<count;i++){
+			System.out.println("Enter Employee ID: ");
+			empid[i]= sc.nextInt();
+			System.out.println("Enter Employee First Name: ");
+			fname[i]= sc.next();
+			System.out.println("Enter Employee Last Name: ");
+			lname[i]= sc.next();
+			System.out.println("Enter Employee Phone: ");
+			ph[i]= Integer.parseInt(sc.next());
+			
+			EmpListToMapL obj=new EmpListToMapL(empid[i],fname[i],lname[i],ph[i]);
+			lis.add(obj);
+			
+		}
+		
+		EmpListToMapM ltom= new EmpListToMapM();
+		ltom.listtomap(lis);
+		
+	}
+		
+
+}
