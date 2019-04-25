@@ -1,0 +1,29 @@
+package projOne;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+public class EmpListToMapM {
+	public void listtomap(List<EmpListToMapL> lis){
+		Map<Integer,List<EmpListToMapL>> m = new HashMap <Integer,List<EmpListToMapL>>(); 
+		for (EmpListToMapL l: lis){
+			m.put(l.empid, lis);
+			}
+	int i = 0;
+	System.out.println(m.get(0).toString());
+	
+	for (Map.Entry<Integer, List<EmpListToMapL>> entry: m.entrySet()){
+		//System.out.println(entry.getKey());
+		//System.out.println(entry.getValue().get(i).fname);
+		
+		//System.out.println(m.get(entry));
+		//for (EmpListToMapL e: lis){
+		i=i++;
+		//}
+	}
+	}
+	
+	}
