@@ -1,0 +1,27 @@
+package com.demo;
+
+public class TestCar {
+	
+	public String carName;
+	private String wheelName;
+	
+	public TestCar(String wheelName)
+	{
+		System.out.println("In Constructor");
+		System.out.println("Wheel Name: "+wheelName);
+	}
+	
+	
+	
+	public String getCarName() {
+		return carName;
+	}
+	public void setCarName(String carName) {
+		 this.carName = carName;
+	}
+	
+	public void display(){
+		System.out.println("In Display Method");
+		System.out.println("Car Name: "+carName);	
+	}	
+}
